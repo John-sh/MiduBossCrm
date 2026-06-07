@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>资源详情 - 原型图</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page">
+  <div class="page-header">
+    <h2>资源详情</h2>
+  </div>
+
+  <!-- 顶部 Tab -->
+  <div class="tabs">
+    <span class="tab active">基本信息</span>
+    <span class="tab">客户线索</span>
+  </div>
+
+  <!-- 基本信息区 -->
+  <section class="info-section">
+    <div class="info-row">
+      <div class="info-item"><span class="label">客户名称：</span><span class="value">测试科技集团</span></div>
+      <div class="info-item"><span class="label">申请项目：</span><span class="value">数据平台</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">联系人：</span><span class="value">乔强</span></div>
+      <div class="info-item"><span class="label">联系方式：</span><span class="value">131*157479(暂时隐藏)</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">联系人部门：</span><span class="value">—</span></div>
+      <div class="info-item"><span class="label">联系人职位：</span><span class="value">—</span></div>
+      <div class="info-item"><span class="label">地区：</span><span class="value">上海</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">客户需求：</span><span class="value">希望达到金融行业解决方案</span></div>
+      <div class="info-item"><span class="label">线索类型：</span><span class="value">申请试用</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">提交时间：</span><span class="value">2026-05-27 19:17:01</span></div>
+      <div class="info-item"><span class="label">入池时间：</span><span class="value">2026-05-27 19:17:01</span></div>
+      <div class="info-item"><span class="label">状态：</span><span class="value">待处理</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">一级渠道：</span><span class="value">私域运营</span></div>
+      <div class="info-item"><span class="label">二级渠道：</span><span class="value">微信号</span></div>
+      <div class="info-item"><span class="label">三级渠道：</span><span class="value">官方</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">客户池：</span><span class="value">—</span></div>
+      <div class="info-item"><span class="label">联系页链接：</span><span class="value link">https://www.midu.com/apply/form/0427f2d7...</span></div>
+      <div class="info-item"><span class="label">状态：</span><span class="value">—</span></div>
+    </div>
+
+    <h3 class="sub-title">基础属性</h3>
+    <div class="info-row">
+      <div class="info-item full"><span class="label">职位：</span><span class="value">—</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">扩展信息：</span><span class="value">客户编号：1378196479</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item full"><span class="label">浏览器信息：</span><span class="value">Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/... Safari/604.1</span></div>
+    </div>
+    <div class="info-row">
+      <div class="info-item"><span class="label">IP地址：</span><span class="value">116.228.*.*</span></div>
+      <div class="info-item"><span class="label">IP定位：</span><span class="value">上海</span></div>
+      <div class="info-item"><span class="label">申请理由：</span><span class="value">—</span></div>
+    </div>
+
+    <h3 class="sub-title">解决方案</h3>
+    <div class="info-row">
+      <div class="info-item full"><span class="value">—</span></div>
+    </div>
+  </section>
+
+  <!-- Tab 栏 -->
+  <div class="sub-tabs">
+    <span class="sub-tab active">状态变更日志</span>
+    <span class="sub-tab">历史申请记录</span>
+    <span class="sub-tab">用户行为记录</span>
+    <span class="sub-tab">问题与解答</span>
+    <span class="sub-tab">AI分析</span>
+    <span class="sub-tab">信息摘要</span>
+  </div>
+
+  <section class="log-section">
+    <div class="log-tip">暂无日志数据</div>
+  </section>
+
+  <!-- 底部操作区 -->
+  <div class="action-bar">
+    <button class="btn btn-primary" data-modal="phone">电话</button>
+    <button class="btn" data-modal="sms">短信</button>
+    <button class="btn" data-modal="cultivate">培育</button>
+    <button class="btn btn-warn" data-modal="dispatch">派发</button>
+    <button class="btn btn-ghost" data-modal="close">关闭</button>
+    <button class="btn btn-danger" data-modal="invalid">无效</button>
+  </div>
+</div>
+
+<!-- ===================== 弹窗：电话 ===================== -->
+<div class="modal-mask" id="modal-phone">
+  <div class="modal phone-modal">
+    <div class="modal-header">
+      <span>电话外呼</span>
+      <button class="modal-close" data-close>×</button>
+    </div>
+    <div class="modal-body">
+      <div class="phone-top">
+        <div class="phone-agent">
+          <span class="agent-icon">📶</span>
+          <span class="agent-name">林青梅</span>
+          <span class="agent-status"><span class="dot online"></span>在线</span>
+          <span class="agent-timer">00:00:38</span>
+        </div>
+        <div class="phone-input">
+          <input type="text" placeholder="输入号码外呼" value="131*157479" />
+          <button class="btn-icon" title="拨号">☎️</button>
+          <button class="btn-icon" title="联系人">👤</button>
+          <button class="btn-icon" title="设置">⚙️</button>
+        </div>
+      </div>
+      <div class="phone-bottom">
+        <span>外显：18964959044</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 弹窗：短信 ===================== -->
+<div class="modal-mask" id="modal-sms">
+  <div class="modal">
+    <div class="modal-header">
+      <span>发送短信</span>
+      <button class="modal-close" data-close>×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <label>收件人：</label>
+        <input type="text" value="乔强 (131*157479)" readonly />
+      </div>
+      <div class="form-row">
+        <label>短信模板：</label>
+        <select>
+          <option>请选择模板</option>
+          <option>通用问候模板</option>
+          <option>产品介绍模板</option>
+          <option>活动邀请模板</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>短信内容：</label>
+        <textarea rows="4" placeholder="请输入短信内容..."></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" data-close>取消</button>
+      <button class="btn btn-primary" data-close>发送</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 弹窗：培育 ===================== -->
+<div class="modal-mask" id="modal-cultivate">
+  <div class="modal modal-lg">
+    <div class="modal-header">
+      <span>培育</span>
+      <button class="modal-close" data-close>×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row grow-row">
+        <label>主体：</label>
+        <select>
+          <option>上海蜜度信息技术有限公司</option>
+        </select>
+        <button class="btn btn-warn btn-sm">申请创建主体</button>
+      </div>
+      <div class="form-row center-row">
+        <button class="btn btn-primary">确认以上信息，锁定主体</button>
+      </div>
+
+      <div class="form-row form-3col">
+        <div>
+          <label>单位名称：</label>
+          <select>
+            <option>上海蜜度信息技术有限公司</option>
+          </select>
+        </div>
+        <div>
+          <label>联系人：</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>手机号：</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="form-row form-3col">
+        <div>
+          <label>联系人部门：</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>联系人职位：</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>申请项目：</label>
+          <select>
+            <option>请选择</option>
+            <option>数据平台</option>
+            <option>舆情分析</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>其他沟通需求：</label>
+        <textarea rows="4" placeholder="请输入客户需求..."></textarea>
+      </div>
+
+      <div class="form-row form-3col">
+        <div>
+          <label>渠道：</label>
+          <input type="text" value="搜索引擎-自然搜索-银行" readonly />
+        </div>
+        <div>
+          <label>单位属性：</label>
+          <select>
+            <option>请选择</option>
+          </select>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="form-row form-3col">
+        <div>
+          <label>需求匹配度：</label>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div>
+          <label>是否加上企业微信：</label>
+          <select>
+            <option>是</option>
+            <option>否</option>
+          </select>
+        </div>
+        <div>
+          <label>渠道标签：</label>
+          <select>
+            <option>申请试用</option>
+            <option>表单留资</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" data-close>取消</button>
+      <button class="btn btn-primary" data-close>保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 弹窗：派发 ===================== -->
+<div class="modal-mask" id="modal-dispatch">
+  <div class="modal">
+    <div class="modal-header">
+      <span>派发</span>
+      <button class="modal-close" data-close>×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row info-row-inline">
+        <span><strong>主体：</strong>上海蜜度科技股份有限公司</span>
+        <span><strong>单位名称：</strong>上海蜜度科技股份有限公司-市场部</span>
+      </div>
+      <div class="form-row">
+        <label>相似客户：</label>
+        <select>
+          <option>客户1</option>
+          <option>客户2</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>所属部门：</label>
+        <select>
+          <option>部门1</option>
+          <option>部门2</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>负责人：</label>
+        <select>
+          <option>销售1</option>
+          <option>销售2</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>派单类型：</label>
+        <select>
+          <option>客户需求</option>
+          <option>培育</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" data-close>取消</button>
+      <button class="btn btn-primary" data-close>派发</button>
+      <button class="btn btn-primary" data-close>轮循派发</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 弹窗：关闭 ===================== -->
+<div class="modal-mask" id="modal-close">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <span>提示</span>
+      <button class="modal-close" data-close>×</button>
+    </div>
+    <div class="modal-body">
+      <p>确定要关闭资源详情吗？</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" data-close>取消</button>
+      <button class="btn btn-primary" data-close>确认关闭</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 弹窗：无效 ===================== -->
+<div class="modal-mask" id="modal-invalid">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <span>标记为无效</span>
+      <button class="modal-close" data-close>×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <label>无效理由：</label>
+        <select>
+          <option>无效理由1</option>
+          <option>无效理由2</option>
+          <option>空号/错号</option>
+          <option>无需求</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>备注：</label>
+        <textarea rows="3" placeholder="请输入具体的无效理由..."></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" data-close>取消</button>
+      <button class="btn btn-danger" data-close>确认无效</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
