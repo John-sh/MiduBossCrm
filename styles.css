@@ -548,3 +548,58 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+/* ===== Editable Row ===== */
+.editable-row {
+  display: flex;
+  gap: 24px;
+  padding: 12px 16px;
+  background: #f5f7fa;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.editable-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editable-item label {
+  min-width: 80px;
+  color: #606266;
+  text-align: right;
+}
+
+.editable-item .text-value {
+  flex: 1;
+  color: #303133;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.editable-item .edit-icon {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: all 0.15s;
+  opacity: 0.6;
+}
+
+.editable-item .edit-icon:hover {
+  background: #e8e8e8;
+  opacity: 1;
+}
+
+.editable-item .edit-input,
+.editable-item .edit-select {
+  flex: 1;
+  min-width: 120px;
+  padding: 4px 8px;
+  border: 1px solid #409eff;
+  border-radius: 3px;
+  font-size: 13px;
+  outline: none;
+}

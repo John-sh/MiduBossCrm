@@ -208,21 +208,29 @@
         </div>
       </div>
 
-      <div class="form-row">
-        <label>联系人部门：</label>
-        <input type="text" />
-      </div>
-      <div class="form-row">
-        <label>联系人职位：</label>
-        <input type="text" />
-      </div>
-      <div class="form-row">
-        <label>申请项目：</label>
-        <select>
-          <option>请选择</option>
-          <option>数据平台</option>
-          <option>舆情分析</option>
-        </select>
+      <div class="form-row editable-row">
+        <div class="editable-item">
+          <label>联系人部门：</label>
+          <span class="text-value">市场部</span>
+          <span class="edit-icon" title="编辑">✏️</span>
+          <input type="text" class="edit-input" value="市场部" style="display: none;" />
+        </div>
+        <div class="editable-item">
+          <label>联系人职位：</label>
+          <span class="text-value">市场专员</span>
+          <span class="edit-icon" title="编辑">✏️</span>
+          <input type="text" class="edit-input" value="市场专员" style="display: none;" />
+        </div>
+        <div class="editable-item">
+          <label>申请项目：</label>
+          <span class="text-value">舆情平台</span>
+          <span class="edit-icon" title="编辑">✏️</span>
+          <select class="edit-select" style="display: none;">
+            <option>舆情平台</option>
+            <option>数据平台</option>
+            <option>舆情分析</option>
+          </select>
+        </div>
       </div>
 
       <div class="form-row">
