@@ -552,51 +552,50 @@ body {
 /* ===== Editable Row ===== */
 .editable-row {
   display: flex;
-  gap: 24px;
-  padding: 12px 16px;
-  background: #f5f7fa;
-  border-radius: 4px;
+  gap: 16px;
   margin-bottom: 16px;
 }
 
-.editable-item {
+.editable-row .editable-item {
   flex: 1;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.editable-item label {
-  min-width: 80px;
+.editable-row .editable-item label {
+  min-width: 60px;
   color: #606266;
-  text-align: right;
 }
 
-.editable-item .text-value {
+.editable-row .editable-item .text-value {
   flex: 1;
   color: #303133;
   font-weight: 500;
-  min-width: 100px;
 }
 
-.editable-item .edit-icon {
+.editable-row .editable-item .edit-icon {
+  background: none;
+  border: none;
   font-size: 14px;
   cursor: pointer;
-  padding: 2px 4px;
-  border-radius: 3px;
-  transition: all 0.15s;
-  opacity: 0.6;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
-.editable-item .edit-icon:hover {
-  background: #e8e8e8;
+.editable-row .editable-item .edit-icon:hover {
   opacity: 1;
 }
 
-.editable-item .edit-input,
-.editable-item .edit-select {
+.editable-row .editable-item .edit-input,
+.editable-row .editable-item .edit-select {
+  display: none;
   flex: 1;
-  min-width: 120px;
+  min-width: 100px;
   padding: 4px 8px;
   border: 1px solid #409eff;
   border-radius: 3px;
