@@ -13,13 +13,11 @@
     <h2>资源详情</h2>
   </div>
 
-  <!-- 顶部 Tab -->
   <div class="tabs">
     <span class="tab active">基本信息</span>
     <span class="tab">客户线索</span>
   </div>
 
-  <!-- 基本信息区 -->
   <section class="info-section">
     <div class="info-row">
       <div class="info-item"><span class="label">客户名称：</span><span class="value">测试科技集团</span></div>
@@ -76,7 +74,6 @@
     </div>
   </section>
 
-  <!-- Tab 栏 -->
   <div class="sub-tabs">
     <span class="sub-tab active">状态变更日志</span>
     <span class="sub-tab">历史申请记录</span>
@@ -90,7 +87,6 @@
     <div class="log-tip">暂无日志数据</div>
   </section>
 
-  <!-- 底部操作区 -->
   <div class="action-bar">
     <button class="btn btn-primary" data-modal="phone">电话</button>
     <button class="btn" data-modal="sms">短信</button>
@@ -101,7 +97,6 @@
   </div>
 </div>
 
-<!-- ===================== 弹窗：电话 ===================== -->
 <div class="modal-mask" id="modal-phone">
   <div class="modal phone-modal">
     <div class="modal-header">
@@ -130,7 +125,6 @@
   </div>
 </div>
 
-<!-- ===================== 弹窗：短信 ===================== -->
 <div class="modal-mask" id="modal-sms">
   <div class="modal">
     <div class="modal-header">
@@ -163,7 +157,6 @@
   </div>
 </div>
 
-<!-- ===================== 弹窗：培育 ===================== -->
 <div class="modal-mask" id="modal-cultivate">
   <div class="modal modal-lg">
     <div class="modal-header">
@@ -182,62 +175,7 @@
         <button class="btn btn-primary">确认以上信息，锁定主体</button>
       </div>
 
-      <div class="form-row form-3col">
-        <div>
-          <label>单位名称：</label>
-          <select>
-            <option>上海蜜度信息技术有限公司</option>
-          </select>
-        </div>
-        <div>
-          <label>联系人：</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label>手机号：</label>
-          <input type="text" />
-        </div>
-      </div>
-
-      <div class="form-row form-3col">
-        <div>
-          <label>联系人部门：</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label>联系人职位：</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label>申请项目：</label>
-          <select>
-            <option>请选择</option>
-            <option>数据平台</option>
-            <option>舆情分析</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <label>其他沟通需求：</label>
-        <textarea rows="4" placeholder="请输入客户需求..."></textarea>
-      </div>
-
-      <div class="form-row form-3col">
-        <div>
-          <label>渠道：</label>
-          <input type="text" value="搜索引擎-自然搜索-银行" readonly />
-        </div>
-        <div>
-          <label>单位属性：</label>
-          <select>
-            <option>请选择</option>
-          </select>
-        </div>
-        <div></div>
-      </div>
-
-      <div class="form-row form-3col">
+      <div class="form-row form-2col-highlight">
         <div>
           <label>需求匹配度：</label>
           <select>
@@ -253,13 +191,61 @@
             <option>否</option>
           </select>
         </div>
+      </div>
+
+      <div class="form-row form-3col-text">
         <div>
-          <label>渠道标签：</label>
-          <select>
-            <option>申请试用</option>
-            <option>表单留资</option>
-          </select>
+          <label>单位名称：</label>
+          <span class="text-value">上海蜜度信息技术有限公司</span>
         </div>
+        <div>
+          <label>联系人：</label>
+          <span class="text-value">乔强</span>
+        </div>
+        <div>
+          <label>手机号：</label>
+          <span class="text-value">131*157479</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>联系人部门：</label>
+        <input type="text" />
+      </div>
+      <div class="form-row">
+        <label>联系人职位：</label>
+        <input type="text" />
+      </div>
+      <div class="form-row">
+        <label>申请项目：</label>
+        <select>
+          <option>请选择</option>
+          <option>数据平台</option>
+          <option>舆情分析</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>渠道：</label>
+        <input type="text" value="搜索引擎-自然搜索-银行" readonly />
+      </div>
+      <div class="form-row">
+        <label>单位属性：</label>
+        <select>
+          <option>请选择</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>渠道标签：</label>
+        <select>
+          <option>申请试用</option>
+          <option>表单留资</option>
+        </select>
+      </div>
+
+      <div class="form-row bottom-row">
+        <label>其他沟通需求：</label>
+        <textarea rows="4" placeholder="请输入客户需求..."></textarea>
       </div>
     </div>
     <div class="modal-footer">
@@ -269,7 +255,6 @@
   </div>
 </div>
 
-<!-- ===================== 弹窗：派发 ===================== -->
 <div class="modal-mask" id="modal-dispatch">
   <div class="modal">
     <div class="modal-header">
@@ -318,7 +303,6 @@
   </div>
 </div>
 
-<!-- ===================== 弹窗：关闭 ===================== -->
 <div class="modal-mask" id="modal-close">
   <div class="modal modal-sm">
     <div class="modal-header">
@@ -335,7 +319,6 @@
   </div>
 </div>
 
-<!-- ===================== 弹窗：无效 ===================== -->
 <div class="modal-mask" id="modal-invalid">
   <div class="modal modal-sm">
     <div class="modal-header">

@@ -353,6 +353,66 @@ body {
   margin: 16px 0;
 }
 
+.form-2col-highlight {
+  display: flex;
+  gap: 24px;
+  padding: 12px 16px;
+  background: #f5f7fa;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.form-2col-highlight > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-2col-highlight > div label {
+  min-width: 100px;
+  text-align: right;
+  color: #303133;
+  font-weight: 500;
+}
+
+.form-2col-highlight > div select {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid #dcdfe6;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.form-3col-text {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-3col-text > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-3col-text > div label {
+  min-width: 60px;
+  color: #606266;
+}
+
+.form-3col-text > div .text-value {
+  color: #303133;
+  font-weight: 500;
+}
+
+.bottom-row {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed #e8e8e8;
+}
+
 .info-row-inline {
   gap: 24px;
   color: #606266;
