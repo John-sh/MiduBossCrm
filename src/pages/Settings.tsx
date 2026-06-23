@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Settings as SettingsIcon, Clock, AlertCircle, Users, Plus, Trash2, ToggleLeft, ToggleRight } from 'lucide-react';
+import { Clock, AlertCircle, Users, Plus, Trash2, ToggleLeft, ToggleRight } from 'lucide-react';
 import { api } from '@/api';
-import type { Settings, GroupConfig } from '@/types';
+import type { Settings } from '@/types';
 import Header from '@/components/Header';
 
 export default function SettingsPage() {

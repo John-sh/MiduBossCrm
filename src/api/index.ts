@@ -15,10 +15,10 @@ export const api = {
       let data = [...mockSummaries];
 
       if (params?.dateStart) {
-        data = data.filter(s => s.date >= params.dateStart);
+        data = data.filter(s => s.date >= params.dateStart!);
       }
       if (params?.dateEnd) {
-        data = data.filter(s => s.date <= params.dateEnd);
+        data = data.filter(s => s.date <= params.dateEnd!);
       }
       if (params?.groupId) {
         data = data.filter(s => s.groupId === params.groupId);
@@ -52,10 +52,10 @@ export const api = {
       let data = [...mockReminders];
 
       if (params?.dateStart) {
-        data = data.filter(r => r.triggeredAt >= params.dateStart);
+        data = data.filter(r => r.triggeredAt >= params.dateStart!);
       }
       if (params?.dateEnd) {
-        data = data.filter(r => r.triggeredAt <= params.dateEnd);
+        data = data.filter(r => r.triggeredAt <= params.dateEnd!);
       }
       if (params?.groupId) {
         data = data.filter(r => r.groupId === params.groupId);
@@ -82,7 +82,7 @@ export const api = {
       return mockReminderStatistics;
     },
 
-    process: async (id: string): Promise<{ success: boolean; message: string }> => {
+    process: async (_id: string): Promise<{ success: boolean; message: string }> => {
       await delay(300);
       return { success: true, message: '已处理' };
     },
@@ -94,22 +94,22 @@ export const api = {
       return mockSettings;
     },
 
-    update: async (settings: Partial<Settings>): Promise<{ success: boolean; message: string }> => {
+    update: async (_settings: Partial<Settings>): Promise<{ success: boolean; message: string }> => {
       await delay(300);
       return { success: true, message: '配置更新成功' };
     },
 
-    addGroup: async (group: Omit<GroupConfig, 'enabled'>): Promise<{ success: boolean; message: string }> => {
+    addGroup: async (_group: Omit<GroupConfig, 'enabled'>): Promise<{ success: boolean; message: string }> => {
       await delay(300);
       return { success: true, message: '群添加成功' };
     },
 
-    deleteGroup: async (groupId: string): Promise<{ success: boolean; message: string }> => {
+    deleteGroup: async (_groupId: string): Promise<{ success: boolean; message: string }> => {
       await delay(300);
       return { success: true, message: '群删除成功' };
     },
 
-    toggleGroup: async (groupId: string, enabled: boolean): Promise<{ success: boolean; message: string }> => {
+    toggleGroup: async (_groupId: string, enabled: boolean): Promise<{ success: boolean; message: string }> => {
       await delay(300);
       return { success: true, message: enabled ? '群已启用' : '群已禁用' };
     },

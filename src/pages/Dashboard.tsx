@@ -145,7 +145,7 @@ export default function Dashboard() {
                 </div>
                 <div className="text-left">
                   <p className="font-medium text-gray-900">查看今日摘要</p>
-                  <p className="text-xs text-gray-500">{stats.summaryCount} 条记录</p>
+                  <p className="text-xs text-gray-500">{stats!.summaryCount} 条记录</p>
                 </div>
               </button>
               
@@ -155,7 +155,7 @@ export default function Dashboard() {
                 </div>
                 <div className="text-left">
                   <p className="font-medium text-gray-900">待处理提醒</p>
-                  <p className="text-xs text-gray-500">{stats.todayReminders} 条待处理</p>
+                  <p className="text-xs text-gray-500">{stats!.todayReminders} 条待处理</p>
                 </div>
               </button>
               
@@ -165,7 +165,7 @@ export default function Dashboard() {
                 </div>
                 <div className="text-left">
                   <p className="font-medium text-gray-900">问题处理统计</p>
-                  <p className="text-xs text-gray-500">闭环率 {stats.resolutionRate}%</p>
+                  <p className="text-xs text-gray-500">闭环率 {stats!.resolutionRate}%</p>
                 </div>
               </button>
             </div>
