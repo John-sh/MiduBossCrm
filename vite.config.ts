@@ -8,5 +8,5 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  base: './',
+  base: process.env.VITE_BASE_URL || '/MiduBossCrm/',
 })

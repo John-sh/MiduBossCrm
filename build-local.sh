@@ -4,8 +4,8 @@
 
 echo "开始构建本地版本..."
 
-# 构建项目
-npm run build
+# 构建项目（使用相对路径）
+VITE_BASE_URL='./' npm run build
 
 # 检查构建是否成功
 if [ -d "dist" ]; then
